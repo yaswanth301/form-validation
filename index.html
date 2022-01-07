@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="form_container">
+<h1>hurry sign up</h1>
+<form action="" class="appli">
+  <label for="name">username</label>
+  <input type="text" id="name" placeholder="username" name="name" required minlength="6" maxlength="12" />
+  <label for="mail">mail</label>
+  <input type="email" id ="mail" placeholder="@gmail.com"  name="mail" required minlength="6" maxlength="30"/>
+  <label for="phoneNum">phone Number</label>
+  <input type="text" id="phoneNum"
+  placeholder="phone number" pattern="[0-9]{10}" required name="phoneNum" minlength="6" maxlength="15"/>
+  <label for="password">password</label>
+  <input type="password" id="password"
+  placeholder="password (enter min 8 characters)" title="must contain atleast 1 uppercase letter,1 lowercase letter,1 number" required minlength="6" maxlength="15" name="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"/>
+  <label for="confirm_password">Re-enter password</label>
+  <input type="password" id="confirm password"
+  placeholder="password (enter min 8 characters)" required minlength="6" name="confirm_password" maxlength="15" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"/>
+  <label for="comment">comment</label>
+  <input type="text" id="comment"
+  placeholder="comment" required minlength="6" name="comment" maxlength="100"/>
+  <div>
+    <button type="submit">login</button>
+    <button type="submit">sign up</button>
+  </div>
+  <div class="msg_container">
+    <h2 class="message">fill up all details</h2>
+  </div>
+</form>
+<script src="./index.js"></script>
+</body>
+</html>
+
